@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'login_page.dart'; // تأكد أنه نفس اسم الملف
+import 'login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Itqan HR',
-      theme: ThemeData(primarySwatch: Colors.deepPurple, fontFamily: 'Arial'),
+      debugShowCheckedModeBanner: false,
       home: const LoginPage(),
     );
   }

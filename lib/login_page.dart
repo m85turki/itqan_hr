@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'auth_service.dart'; // تأكد من المسار
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

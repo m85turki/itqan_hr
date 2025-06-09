@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'login_page.dart'; // تأكد أن اسم الملف صح
+
+import 'pages/signup_page.dart';
+import 'pages/verify_email_page.dart';
+import 'pages/home_page.dart'; // هذه صفحة رئيسية مؤقتة
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,10 +24,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: 'Itqan HR',
-      theme: ThemeData(primarySwatch: Colors.deepPurple, fontFamily: 'Arial'),
-      home: const LoginPage(),
+      theme: ThemeData(primarySwatch: Colors.blue),
+      initialRoute: '/signup',
+      routes: {
+        '/signup': (context) => const SignupPage(),
+        '/verify': (context) => const VerifyEmailPage(),
+        '/home': (context) => const HomePage(),
+      },
     );
   }
 }

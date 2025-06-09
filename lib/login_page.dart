@@ -1,7 +1,7 @@
 // صفحة تسجيل الدخول
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'signup_page.dart';
+import 'pages/signup_page.dart';
 import 'forgot_password_page.dart';
 
 class LoginPage extends StatefulWidget {
